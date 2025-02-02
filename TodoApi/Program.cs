@@ -36,7 +36,7 @@ app.UseCors();
 // app.UseCors("AllowAll");
 
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "TodoList API is running");
 
 app.MapGet("/items", async (ToDoDbContext db) =>
 {
