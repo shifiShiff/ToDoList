@@ -10,6 +10,8 @@ export default {
   // },
 
   getTasks: async () => {
+    console.log(process.env.REACT_APP_API_URL);
+    
     const result = await axios.get(`/items`)    
     return result.data;
   },

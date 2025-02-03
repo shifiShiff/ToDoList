@@ -1,7 +1,14 @@
 import axios from 'axios';
 
 // הגדרת כתובת ה-API כברירת מחדל
-axios.defaults.baseURL = 'http://localhost:5137';
+
+// axios.defaults.baseURL =
+//   process.env.REACT_APP_API_URL || "http://localhost:5137";
+
+axios.defaults.baseURL =process.env.REACT_APP_API_URL;
+
+
+// axios.defaults.baseURL = 'http://localhost:5137';
 
 // ניתן גם להוסיף הגדרות נוספות
 // axios.defaults.headers.common['Authorization'] = `Bearer YOUR_TOKEN_HERE`;
